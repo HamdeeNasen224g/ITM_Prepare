@@ -5,5 +5,23 @@
 }
 
 body {
-    background-color: aqua;
+
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: 65647C;
+    text-align: center;
+ }
+
+h2{
+    color: #65647C;
+}
+
+.text{
+    color:#65647C;
+}
+
