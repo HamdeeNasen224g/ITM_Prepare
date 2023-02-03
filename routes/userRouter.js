@@ -1,6 +1,7 @@
 //test
 const express = require('express');
-const UserController = require("../controllers/userController")
+const UserController = require("../controllers/userController");
+const { log } = require('console');
 const router = require('express').Router();
 
 router.get('/',(req,res,next)=>{
@@ -18,6 +19,7 @@ router.get('/upload',(req,res,next)=>{
 }) 
 
 router.get('/alluser',UserController.getalluser)
+router.get('/test',UserController.getalldata)
 
 router.post('/insertimg',UserController.uploadimage)
 

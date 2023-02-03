@@ -12,6 +12,16 @@ class Usermodel {
             })
         })
     }
+    static async getdata() {
+
+        return new Promise(resolve => {
+            db.query("select * from image", [], (error, results) => {
+                if (!error) {
+                    resolve(results)
+                }
+            })
+        })
+    }
 
     static async insertImg(id, name, data) {
 
