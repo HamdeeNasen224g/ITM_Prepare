@@ -42,18 +42,30 @@
       var reader = new FileReader();
       reader.onload = function(e) {
         var dataURL = e.target.result; 
-        $.ajax({
-          url: "/insertimg",
-          type: "POST",
-          data: { data: dataURL },
-          success: function(response) {
-            console.log("Image uploaded successfully");
-          }
-        });
+        console.log(dataURL);
+        generateReport(dataURL);
+
+
+        // $.ajax({
+        //   url: "/insertimg",
+        //   type: "POST",
+        //   data: { data: dataURL },
+        //   success: function(response) {
+        //     console.log("Image uploaded successfully");
+        //   }
+        // });
       };
       reader.readAsDataURL(input.files[0]);
     }
   });
+
+  function generateReport(data) {
+      
+        var img = document.createElement("img");
+        img.src = data;
+        document.body.appendChild(img);
+     
+    }
 </script>
 
 </body>
