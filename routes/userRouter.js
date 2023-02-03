@@ -13,6 +13,12 @@ router.get('/header', (req,res,next)=>{
     res.sendFile('layout/header.ejs');
 })
 
+router.get('/upload',(req,res,next)=>{
+    res.render('img');
+}) 
+
 router.get('/alluser',UserController.getalluser)
+
+router.post('/insertimg',UserController.uploadimage)
 
 module.exports = router

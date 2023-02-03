@@ -13,6 +13,17 @@ class Usermodel{
     })
     }
 
+    static async insertImg(id,name,data){
+       
+        db.query("insert into image (name,id,data ) value (?,?,?)",[id,name,data],(err,result)=>{
+           if(!err)
+            resolve(true)
+           else
+           console.log("error",err)
+           resolve(false)
+        })
+    }
+
 
 }
 
