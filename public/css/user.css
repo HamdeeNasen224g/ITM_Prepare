@@ -9,20 +9,34 @@ body {
 
 }
 
+.navbar {
+    background-color: #3C4048;
+}
+
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    color: 65647C;
+    background-color: #3C4048;
     text-align: center;
  }
+
+ .imgSize {
+    width: 40px;
+    height: 40px;
+ }
+
+ .text-muted {
+    color: white;
+}
 
 h2{
     color: #65647C;
 }
 
-.text{
-    color:#65647C;
+.text,.text-color{
+    color:white;
 }
+
 
