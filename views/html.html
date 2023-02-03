@@ -19,22 +19,22 @@
     </tbody>
 </body>
 <script>
-//     google.charts.load('current', {
-//     'packages': ['corechart', 'bar']
-// });
-//     google.charts.setOnLoadCallback(loadTable);
+    google.charts.load('current', {
+    'packages': ['corechart', 'bar']
+});
+    google.charts.setOnLoadCallback(loadTable);
 
-//     function loadTable() {
-//     const xhttp = new XMLHttpRequest();
-//     xhttp.open("GET", "http://localhost:3002/user/test");
-//     xhttp.send();
-//     const objectss = JSON.parse(this.responseText);
-//     console.log(objectss);
+    function loadTable() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://localhost:3002/user/test");
+    xhttp.send();
+    const objectss = JSON.parse(this.responseText);
+    console.log(objectss);
 
-// }
+}
 
-fetch('http://localhost:3002/user/test')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+// fetch('http://localhost:3002/user/test')
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
 </script>
 </html>
