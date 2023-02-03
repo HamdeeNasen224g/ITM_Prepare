@@ -9,6 +9,10 @@ router.get('/',(req,res,next)=>{
     // res.json({message:"Hello world"})
 }) 
 
+router.get('/header', (req,res,next)=>{
+    res.sendFile('layout/header.ejs');
+})
+
 router.get('/alluser',UserController.getalluser)
 
 module.exports = router
