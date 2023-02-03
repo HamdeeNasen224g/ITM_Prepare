@@ -5,8 +5,6 @@ const router = require('express').Router();
 
 router.get('/',(req,res,next)=>{
     res.render('user');
-    // res.send('Hello World');
-    // res.json({message:"Hello world"})
 }) 
 
 router.get('/header', (req,res,next)=>{
