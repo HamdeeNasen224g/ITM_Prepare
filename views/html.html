@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <title>CRUD FROM API</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <tbody id="mytable">
+        <tr>
+            <th scope="row" colspan="4">Loading...</th>
+        </tr>
+    </tbody>
+</body>
+<script>
+    google.charts.load('current', {
+    'packages': ['corechart', 'bar']
+});
+    google.charts.setOnLoadCallback(loadTable);
+
+    function loadTable() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://localhost:3002/user/test");
+    xhttp.send();
+    const objectss = JSON.parse(this.responseText);
+    console.log(objectss);
+
+}
+
+// fetch('http://localhost:3002/user/test')
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
+</script>
+</html>
