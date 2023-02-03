@@ -11,5 +11,17 @@ class UserController{
         res.send(results)
 
     }
+
+    static async uploadimage(req,res){
+        var id = req.body.id;
+        var name = req.body.name;
+        var data = req.body.data;
+        res.send(id+" "+name+" "+data);
+        // var results = await Usermodel.insertImg(id,name,data);
+        // if(results)
+        // res.send("data edited successful")
+        // else
+        // res.send("data edited failed")
+    }
 }
 module.exports = UserController
