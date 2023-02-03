@@ -6,17 +6,23 @@ const router = require('express').Router();
 
 router.get('/',(req,res,next)=>{
     res.render('user');
-    // res.send('Hello World');
-    // res.json({message:"Hello world"})
 }) 
 
 router.get('/header', (req,res,next)=>{
     res.sendFile('layout/header.ejs');
 })
 
+router.get('/footer', (req,res,next)=>{
+    res.sendFile('layout/footer.ejs');
+})
+
 router.get('/upload',(req,res,next)=>{
     res.render('img');
 }) 
+
+router.get('/add',(req,res,next)=>{ 
+    res.render('add');
+})
 
 router.get('/alluser',UserController.getalluser)
 router.get('/test',UserController.getalldata)
