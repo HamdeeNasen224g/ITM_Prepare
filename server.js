@@ -15,7 +15,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/images',express.static('images'));
 
 //path to page
-app.use("/user",routeUser);
+app.use("/user",routeUser);  
 
 app.listen(port,()=> console.log('Server is running on port '+port));
 
