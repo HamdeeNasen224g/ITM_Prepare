@@ -1,11 +1,28 @@
 <%- include('layout/header.ejs') %> 
 
 <main>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-3 col-lg-"></div>
+            <br><br>
             <h1>Add New User</h1>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <br>
+            <div class="col-sm-6">
+                <form id="image-form">
+                    <input type="file" id="image-input" accept="image/*">
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="E-mail" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Phone" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+                <br><br>
+                <button type="button" class="btn btn-primary btn-block">เพิ่ม</button>
         </div>
     </div>
    
