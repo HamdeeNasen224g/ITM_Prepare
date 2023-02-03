@@ -1,10 +1,10 @@
-//test1111111ff
+//test
 const express = require('express');
 const UserController = require("../controllers/userController")
 const router = require('express').Router();
 
 router.get('/',(req,res,next)=>{
-     res.render('user');
+    res.render('user');
     // res.send('Hello World');
     // res.json({message:"Hello world"})
 }) 
