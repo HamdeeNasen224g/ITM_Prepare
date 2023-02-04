@@ -1,26 +1,28 @@
+<link rel="stylesheet" type="text/css" href="/css/user.css" />
 <body>
     <%- include('layout/header') %> 
-
+    <div class="bg">
     <section>
         <header>
-            <a href="#"><img src="/images/love-letter.png" class="logo" alt="love-letter"> &nbsp; ITM Valentine's Day</a>
+            <a href="/user" class="systemT"><img src="/images/love-letter.png" class="logo" alt="love-letter"> &nbsp; ITM Valentine's Day</a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Valentine's Day Card</a></li>
+                <li><a href="/user">Home</a></li>
+                <li><a href="/user/add">Valentine's Day Card</a></li>
                 <li><a href="#">Login</a></li>
             </ul>
         </header>
         <div class="content">
             <div class="textBox">
-                <h2>ITM Valentine<br>It's <span>Walailak University</span> </h2>
+                <h2>ITM Valentine<br>By <span>Walailak University</span> </h2>
                 <p>เว็บไซต์สำหรับการแสดงความรักแก่ผู้เข้าร่วมงาน ITM Network Game 2023 ทุกท่าน โดยทุกท่านสามารถเข้าร่วมการโพสต์ข้อความและรูปภาพสำหรับการแสดงความรักได้</p>
-                <a href="#">เข้าร่วมการแสดงความรัก</a>
+                <a href="/user/add">เข้าร่วมการแสดงความรัก</a>
             </div>
             <div class="imgBox">
-                <img src="/images/image-logo.png" alt="image-logo">
+                <img src="/images/image-logo.png" class="imageL" alt="image-logo">
             </div>
         </div>
     </section>
+</div>
     <!-- <main class="flex-shrink-0">
         <br>
     <section class="content-header">

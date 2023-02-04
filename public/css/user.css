@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
@@ -7,6 +7,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+div.bg {
+    background-image: url("bg-01.png");
+  }
+
+body {
+    background-image: url(bg-01.png);
+}
+
+.systemT {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none; 
+}
+
+.systemT:hover {
+    font-size: 20px;
+    color: #FF597B;
+    text-decoration: none; 
 }
 
 section {
@@ -19,6 +39,11 @@ section {
     align-items: center;
     background-color: #fff;
 }
+
+/* .imageL {
+    width: 700px;
+    height: 700px;
+} */
 
 header {
     position: absolute;
@@ -43,12 +68,21 @@ header ul {
 
 header ul li {
     list-style: none;
+    margin-left: 70px;
 }
 
 header ul li a {
+    font-size: 20px;
+    text-decoration: none;
     display: inline-block;
     color: #333;
     font-weight: 400;
+}
+
+head ul li a:hover {
+    font-size: 20px;
+    color: #FF597B;
+    text-decoration: none; 
 }
 
 .content {
@@ -72,7 +106,7 @@ header ul li a {
 }
 
 .content .textBox h2 span {
-    color: #017143;
+    color: #FF597B;
     font-size: 1.2em;
     font-weight: 900;
 }
@@ -81,6 +115,30 @@ header ul li a {
     color: #333;
 }
 
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #FF597B;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img {
+    width: 660px;
+    height: 660px;
+}
 
 /* .navbar {
     background-color: #3C4048;

@@ -16,6 +16,10 @@ router.get('/footer', (req,res,next)=>{
     res.sendFile('layout/footer.ejs');
 })
 
+router.get('/navbar', (req,res,next)=>{
+    res.sendFile('layout/navbar.ejs');
+})
+
 router.get('/upload',(req,res,next)=>{
     res.render('img');
 }) 
