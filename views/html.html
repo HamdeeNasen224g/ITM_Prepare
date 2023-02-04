@@ -26,12 +26,45 @@
 
     function loadTable() {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://localhost:3002/user/test");
+    xhttp.open("GET", "https://cryptic-headland-94862.herokuapp.com/http://localhost:3002/user/test");
     xhttp.send();
     const objectss = JSON.parse(this.responseText);
     console.log(objectss);
 
 }
+
+// function loadTable() {
+//     const xhttp = new XMLHttpRequest();
+//     xhttp.open("GET", "http://localhost:3000/data");
+//     xhttp.send();
+//     xhttp.onreadystatechange = function() {
+//         if (this.readyState == 4 && this.status == 200) {
+//             var trHTML = '';
+//             var num = 1;
+//             const objects = JSON.parse(this.responseText);
+//             for (let object of objects) {
+
+//                 trHTML += '<tr>';
+//                 trHTML += '<td>' + num + '</td>';
+//                 trHTML += '<td>' + object['Name'] + '</td>';
+//                 trHTML += '<td>' + object['NetWorth'] + '</td>';
+//                 trHTML += '<td>' + object['Age'] + '</td>';
+//                 trHTML += '<td>' + object['Country'] + '</td>';
+//                 trHTML += '<td>' + object['Source'] + '</td>';
+//                 trHTML += '<td>' + object['Industry'] + '</td>';
+//                 trHTML += '<td>';
+//                 trHTML += '<a type="button" class="btn btn-outline-secondary" onclick="showCompliantEditBox(\'' + object['_id'] + '\')"><i class="fas fa-edit"></i></a>';
+//                 trHTML += '<a type="button" class="btn btn-outline-danger" onclick="compliantDelete(\'' + object['_id'] + '\')"><i class="fas fa-trash"></i></a></td>';
+//                 trHTML += "</tr>";
+
+//                 num++;
+//             }
+//             document.getElementById("mytable").innerHTML = trHTML;
+
+//             loadGraph();
+//         }
+//     };
+// }
 
 // fetch('http://localhost:3002/user/test')
 //   .then((response) => response.json())
