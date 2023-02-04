@@ -29,6 +29,10 @@ body {
     text-decoration: none; 
 }
 
+.col-md-5 {
+    border-color:#FF597B;
+}
+
 section {
     position: relative;
     width: 100%;
