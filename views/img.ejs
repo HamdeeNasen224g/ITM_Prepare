@@ -33,6 +33,15 @@
     </form>
 
 <script>
+    
+   var x =  fetch('/user/test')
+  .then((response) => response.json())
+  .then((data) => {console.log(data);
+    if(data != null){
+        return data;
+    }else{return {mesage:"Is null"};}
+});
+console.log(x);
   var form = document.getElementById("image-form");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
