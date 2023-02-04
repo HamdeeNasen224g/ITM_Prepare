@@ -32,6 +32,10 @@ router.get('/show',(req,res,next)=>{
     res.render('show');
 })
 
+router.get('/login',(req,res,next)=>{ 
+    res.render('login');
+})
+
 router.get('/alluser',UserController.getalluser)
 router.get('/test',UserController.getalldata)
 
