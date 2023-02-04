@@ -24,7 +24,7 @@ class Usermodel {
     }
 
     static async insertImg(id, name, data) {
-
+        return new Promise(resolve => {
         db.query("insert into image (name,id,data ) value (?,?,?)", [id, name, data], (err, result) => {
             if (!err)
                 resolve(true)
@@ -32,6 +32,7 @@ class Usermodel {
                 console.log("error", err)
             resolve(false)
         })
+    })
     }
 
 
