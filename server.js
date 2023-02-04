@@ -3,7 +3,7 @@ const mydb = require('./config/db')
 const routeUser = require("./routes/userRouter")
 const app = express();
 const path = require('path');
-const port = process.env.port || 3002;
+const port = process.env.port || 3008;
 app.use(express.json());
 //path to view
 app.set('view engine','ejs')
