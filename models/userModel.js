@@ -5,7 +5,7 @@ class Usermodel {
     static async getusers() {
 
         return new Promise(resolve => {
-            db.query("select * from users", [], (error, results) => {
+            db.query("select * from user", [], (error, results) => {
                 if (!error) {
                     resolve(results)
                 }
