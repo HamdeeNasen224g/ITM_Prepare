@@ -28,6 +28,10 @@ router.get('/add',(req,res,next)=>{
     res.render('add');
 })
 
+router.get('/show',(req,res,next)=>{ 
+    res.render('show');
+})
+
 router.get('/alluser',UserController.getalluser)
 router.get('/test',UserController.getalldata)
 
