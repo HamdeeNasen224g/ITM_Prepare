@@ -33,6 +33,12 @@ body {
     border-color:#FF597B;
 }
 
+input[type=email] {
+    border: 3px solid #FF597B;
+}
+input.form-control {
+    border-color:#FF597B;
+}
 section {
     position: relative;
     width: 100%;
